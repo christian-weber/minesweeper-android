@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/container"
+	    android:stretchColumns="0,1,2">    
+	    <TableRow>
+		    <TableLayout
+		        android:id="@+id/Mine_Field"
+		        android:background="@layout/cellshape"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:gravity="bottom"
+		        android:stretchColumns="*"
+		        android:layout_span="3"
+		        android:padding="5dip" >
+		    </TableLayout>
+	    </TableRow>
+	    <TableRow >
+	
+	        <TextView
+	            android:layout_height="50dp"
+	            android:layout_span="3"
+	            android:scrollbars="vertical" >
+	
+	        </TextView>
+	    </TableRow>
+	    <TableRow>
+	
+	        <TextView
+	            android:id="@+id/Time"
+	            android:layout_column="0"
+	            android:gravity="right"
+	            android:text="@string/initial_count"
+	            android:textStyle="bold|italic" >
+	
+	        </TextView>
+	        <ImageButton
+	            android:id="@+id/NewGame"
+	            android:layout_column="1"
+	            android:layout_height="50dp"
+	            android:contentDescription="@string/new_game">
+	        </ImageButton>
+	
+	        <TextView
+	            android:id="@+id/CountMinesIdentified"
+	            android:layout_column="2"
+	            android:gravity="left"
+	            android:text="@string/initial_count"
+	            android:textStyle="bold|italic" >
+	
+	        </TextView>
+	    </TableRow>
+	</TableLayout>
+</ScrollView>
